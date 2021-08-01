@@ -1,24 +1,24 @@
 public class FizzBuzz {
   public static void main(String[] args) {
-   fizzBuzz(100);
 
   }
 
-  public static void fizzBuzz(int number) {
+  public String fizzBuzz(int number) {
     for (int i = 1; i < number; i++) {
       if (i % 3 == 0 && i % 5 ==0){
-        System.out.println("Fizz Buzz");
+        return "Fizz Buzz";
       }
       else if (i % 3 == 0) {
-        System.out.println("Fizz");
+        return "Fizz";
       }
       else if (i % 5 == 0) {
-        System.out.println("Buzz");
+        return "Buzz";
       }
       else {
-        System.out.println(i);
+        System.out.println(Integer.toString(i));
       }
     }
+    return null;
   }
 
 
